@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{98300774-2A7E-4B1E-8FAC-C4D0E676FD71}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>WindowsApp3.My.MyApplication</StartupObject>
+    <RootNamespace>WindowsApp3</RootNamespace>
+    <AssemblyName>WindowsApp3</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>WindowsApp3.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>WindowsApp3.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Generalknowledge\easyGknowledge.Designer.vb">
+      <DependentUpon>easyGknowledge.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Generalknowledge\easyGknowledge.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menu screens\Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menu screens\Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Generalknowledge\Gknowledge.Designer.vb">
+      <DependentUpon>Gknowledge.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Generalknowledge\Gknowledge.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Generalknowledge\hardGknowledge.Designer.vb">
+      <DependentUpon>hardGknowledge.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Generalknowledge\hardGknowledge.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Logic\Logiceasy.Designer.vb">
+      <DependentUpon>Logiceasy.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Logic\Logiceasy.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Logic\Logichard.Designer.vb">
+      <DependentUpon>Logichard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Logic\Logichard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Logic\logicmedium.Designer.vb">
+      <DependentUpon>logicmedium.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Logic\logicmedium.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Maths\hardquest.Designer.vb">
+      <DependentUpon>hardquest.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Maths\hardquest.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Logic\Logic.Designer.vb">
+      <DependentUpon>Logic.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Logic\Logic.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Maths\mathquest5.Designer.vb">
+      <DependentUpon>mathquest5.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Maths\mathquest5.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Maths\Mathspage.Designer.vb">
+      <DependentUpon>Mathspage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Maths\Mathspage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Maths\mediumquest.Designer.vb">
+      <DependentUpon>mediumquest.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Maths\mediumquest.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Generalknowledge\mediumGknowledge.Designer.vb">
+      <DependentUpon>mediumGknowledge.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Generalknowledge\mediumGknowledge.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Overview.vb" />
+    <Compile Include="puzzle2.Designer.vb">
+      <DependentUpon>puzzle2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="puzzle2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Puzzle3.Designer.vb">
+      <DependentUpon>Puzzle3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Puzzle3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Puzzles\puzzle1.Designer.vb">
+      <DependentUpon>puzzle1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Puzzles\puzzle1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Puzzles\Puzzles.Designer.vb">
+      <DependentUpon>Puzzles.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Puzzles\Puzzles.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menu screens\scoreboardvb.Designer.vb">
+      <DependentUpon>scoreboardvb.vb</DependentUpon>
+    </Compile>
+    <Compile Include="menu screens\scoreboardvb.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Generalknowledge\easyGknowledge.resx">
+      <DependentUpon>easyGknowledge.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menu screens\Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Generalknowledge\Gknowledge.resx">
+      <DependentUpon>Gknowledge.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Generalknowledge\hardGknowledge.resx">
+      <DependentUpon>hardGknowledge.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Logic\Logiceasy.resx">
+      <DependentUpon>Logiceasy.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Logic\Logichard.resx">
+      <DependentUpon>Logichard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Logic\logicmedium.resx">
+      <DependentUpon>logicmedium.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Maths\hardquest.resx">
+      <DependentUpon>hardquest.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Logic\Logic.resx">
+      <DependentUpon>Logic.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Maths\mathquest5.resx">
+      <DependentUpon>mathquest5.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Maths\Mathspage.resx">
+      <DependentUpon>Mathspage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Maths\mediumquest.resx">
+      <DependentUpon>mediumquest.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Generalknowledge\mediumGknowledge.resx">
+      <DependentUpon>mediumGknowledge.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="puzzle2.resx">
+      <DependentUpon>puzzle2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Puzzle3.resx">
+      <DependentUpon>Puzzle3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Puzzles\puzzle1.resx">
+      <DependentUpon>puzzle1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Puzzles\Puzzles.resx">
+      <DependentUpon>Puzzles.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menu screens\scoreboardvb.resx">
+      <DependentUpon>scoreboardvb.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
